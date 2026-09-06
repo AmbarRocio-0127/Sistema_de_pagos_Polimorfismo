@@ -1,20 +1,18 @@
-from MetodoPago import Metodopago
 from Compra import Compra
-from Pago_billetera_digital import Pago_billetera_digital
-from Pago_criptomonedas import Pago_criptomonedas
-from Pago_tarjeta_credito import Pago_tarjeta_credito
-from Pago_transferencia_bancaria import Pago_transferencia_bancaria
+from PagoBilleteraDigital import PagoBilleteraDigital
+from PagoCriptomonedas import PagoCriptomonedas
+from PagoTarjetaCredito import PagoTarjetaCredito
+from PagoTransferenciaBancaria import PagoTransferenciaBancaria
 
 def main():
+    purchase1 = Compra(25000, PagoBilleteraDigital())
+    purchase2 = Compra(25000, PagoCriptomonedas())
+    purchase3 = Compra(25000, PagoTransferenciaBancaria())
+    purchase4 = Compra(25000, PagoTarjetaCredito())
     
-    purchase1 = Compra(25000, Pago_billetera_digital())
-    purchase2 = Compra(25000, Pago_criptomonedas())
-    purchase3 = Compra(25000, Pago_transferencia_bancaria())
-    purchase4 = Compra(25000, Pago_tarjeta_credito())
-    
-    print(f"\nBilletera Digital: {purchase1.calcular_compra()}")
-    print(f"\nCriptomonedas: {purchase2.calcular_compra()}")
-    print(f"\nTransferencia Bancaria: {purchase3.calcular_compra()}")
-    print(f"\nTarjeta de Crédito: {purchase4.calcular_compra()}")
+    print(f"\nBilletera Digital: {purchase1.calcular_total()}")
+    print(f"\nCriptomonedas: {purchase2.calcular_total()}")
+    print(f"\nTransferencia Bancaria: {purchase3.calcular_total()}")
+    print(f"\nTarjeta de Crédito: {purchase4.calcular_total()}")
     
 main()
