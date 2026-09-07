@@ -1,6 +1,6 @@
-# Lecciones aprendidas: Nomenclatura y buenas prácticas en Python (POO)
+# Retroalimentaciones proporcionadas a la hora de hacer esta practica: Nomenclatura y buenas prácticas en Python (POO)
 
-> Notas basadas en la corrección iterativa del ejercicio "Sistema de pagos" (polimorfismo). Documenta los puntos donde hubo debilidad para tenerlos presentes en próximos ejercicios.
+> Notas basadas en la corrección iterativa del ejercicio. Documentando los puntos donde hubo debilidad para tenerlos presentes en próximos ejercicios.
 
 ---
 
@@ -77,13 +77,3 @@ print(PagoBilleteraDigital().procesar_pago(100000))  # ¿da 98000.0?
 ```
 
 ---
-
-## 5. Resumen de checklist antes de entregar un ejercicio de POO
-
-- [ ] ¿Los nombres de clase están en `PascalCase`, sin guiones bajos?
-- [ ] ¿Los nombres de variables, atributos y métodos están en `snake_case`?
-- [ ] ¿Todo el proyecto usa el mismo idioma de forma consistente?
-- [ ] ¿Los nombres de los métodos coinciden exactamente con los que pide el enunciado?
-- [ ] ¿Corriste el archivo principal (`python main.py`) sin errores?
-- [ ] ¿Verificaste los resultados contra los ejemplos numéricos exactos del enunciado?
-- [ ] ¿Cada clase hija sobrescribe correctamente el método de la clase padre (sin cambiar su firma de forma incompatible)?
